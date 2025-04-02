@@ -3,8 +3,10 @@ import orangeMan from "../assets/images/orange-man.png";
 import Button from "../components/global/Button";
 import Navbar from "../components/global/Navbar";
 import cleaning from "../assets/images/cleaningMachine.svg";
-import Accordion from "../components/home/accordion";
 import badge from "../assets/images/badge.svg";
+import bgIcons from "../assets/images/bgIcons.svg";
+import Accordion from "../components/home/accordion";
+import ServiceSlider from "../components/home/ServiceSlider";
 const Home: React.FC = () => {
   return (
     <div>
@@ -113,9 +115,10 @@ const Home: React.FC = () => {
       </div>
 
       <div className="flex flex-col min-h-screen">
+      <ServiceSlider />
         {/* Hero Section */}
-        <section className="bg-blue-500 rounded-lg mx-4 md:mx-8 lg:mx-auto my-8 max-w-6xl overflow-hidden relative">
-          <div className="p-8 md:p-12 relative z-10">
+        <section className="flex py-12 px-[10%] bg-blue-500 rounded-lg md:mx-8 lg:mx-auto my-8 overflow-hidden relative p-8">
+          <div className="w-1/2 p-8 md:p-12 relative z-10 mt-12">
             <p className="text-white/90 mb-2">
               We specialises in the following:
             </p>
@@ -125,29 +128,14 @@ const Home: React.FC = () => {
               Cleaning Services.
             </h1>
           </div>
-          <div className="absolute inset-0 z-0 opacity-10">
-            <div className="grid grid-cols-8 gap-4">
-              {Array(64)
-                .fill(0)
-                .map((_, i) => (
-                  <div key={i} className="flex items-center justify-center">
-                    {i % 5 === 0 && (
-                      <div className="w-6 h-6 rounded-full border-2 border-white" />
-                    )}
-                    {i % 7 === 0 && (
-                      <div className="w-4 h-4 rounded-sm border-2 border-white transform rotate-45" />
-                    )}
-                    {i % 3 === 0 && (
-                      <div className="w-8 h-1 bg-white rounded-full" />
-                    )}
-                  </div>
-                ))}
-            </div>
-          </div>
+          <img 
+            src={bgIcons}
+            alt="Finance Illustration"
+            className="h-80 object-cover p-6"
+          />
         </section>
-
         {/* Features Section */}
-        <section className="bg-gray-100 py-8">
+        <section className="bg-gray-100 py-8 my-12">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Feature 1 */}
