@@ -5,7 +5,6 @@ import Navbar from "../components/global/Navbar";
 import cleaning from "../assets/images/cleaningMachine.svg";
 import Accordion from "../components/home/accordion";
 import ServiceSlider from "../components/home/ServiceSlider";
-import Accordion from "../components/home/Accordion";
 import FeatureBadges from "../components/global/FeatureBadges";
 import Footer from "../components/global/Footer";
 import CleaningBlueSection from "../components/global/CleaningBlueSection";
