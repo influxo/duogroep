@@ -3,16 +3,17 @@ import orangeMan from "../assets/images/orange-man.png";
 import Button from "../components/global/Button";
 import Navbar from "../components/global/Navbar";
 import cleaning from "../assets/images/cleaningMachine.svg";
-import badge from "../assets/images/badge.svg";
-import bgIcons from "../assets/images/bgIcons.svg";
-import Accordion from "../components/home/accordion";
 import ServiceSlider from "../components/home/ServiceSlider";
+import Accordion from "../components/home/Accordion";
+import FeatureBadges from "../components/global/FeatureBadges";
+import Footer from "../components/global/Footer";
+import CleaningBlueSection from "../components/global/CleaningBlueSection";
 const Home: React.FC = () => {
   return (
     <div>
       <div className="bg-secondary">
         <Navbar />
-        <div className="max-w-7xl mx-auto min-h-screen px-6 grid md:grid-cols-2 items-center gap-10 pt-12">
+        <div className="max-w-7xl mx-auto h-screen px-6 grid md:grid-cols-2 items-center gap-10 pt-12">
           <div>
             <h1 className="text-xl md:text-3xl text-gray-900 leading-tight mb-6">
               Clean your dream place.
@@ -115,95 +116,9 @@ const Home: React.FC = () => {
       </div>
 
       <div className="flex flex-col min-h-screen">
-      <ServiceSlider />
-        {/* Hero Section */}
-        <section className="flex py-12 px-[10%] bg-blue-500 rounded-lg md:mx-8 lg:mx-auto my-8 overflow-hidden relative p-8">
-          <div className="w-1/2 p-8 md:p-12 relative z-10 mt-12">
-            <p className="text-white/90 mb-2">
-              We specialises in the following:
-            </p>
-            <h1 className="text-3xl md:text-4xl font-bold text-white">
-              Our Professional
-              <br />
-              Cleaning Services.
-            </h1>
-          </div>
-          <img 
-            src={bgIcons}
-            alt="Finance Illustration"
-            className="h-80 object-cover p-6"
-          />
-        </section>
-        {/* Features Section */}
-        <section className="bg-gray-100 py-8 my-12">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Feature 1 */}
-              <div className="flex items-start space-x-4">
-                <div className="bg-gray-200 rounded-full p-3">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                    <img
-                      src={badge}
-                      alt="Experience Icon"
-                      className="w-12 h-12"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">25 years of experience.</h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    We have 25 years of experience serving the community with
-                    quality cleaning services.
-                  </p>
-                </div>
-              </div>
-
-              {/* Feature 2 */}
-              <div className="flex items-start space-x-4">
-                <div className="bg-gray-200 rounded-full p-3">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                    <img
-                      src={badge}
-                      alt="Experience Icon"
-                      className="w-12 h-12"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">
-                    Quality Products deliver by us.
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    Our products are eco-friendly. If you're not satisfied with
-                    our service, we'll make it right.
-                  </p>
-                </div>
-              </div>
-
-              {/* Feature 3 */}
-              <div className="flex items-start space-x-4">
-                <div className="bg-gray-200 rounded-full p-3">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                    <img
-                      src={badge}
-                      alt="Experience Icon"
-                      className="w-12 h-12"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">
-                    24/7 hours clients support.
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    We offer 24/7 customer service that can be reached anytime
-                    when a problem occurs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServiceSlider />
+        <CleaningBlueSection />
+        <FeatureBadges />
 
         {/* Maintenance Section */}
         <section className="py-16">
@@ -237,43 +152,7 @@ const Home: React.FC = () => {
         </section>
 
         <Accordion />
-
-        {/* Footer */}
-        <footer className="bg-blue-500 text-white mt-auto">
-          <div className="container mx-auto px-4 py-8">
-            <div className="flex justify-center space-x-6 mb-6">
-              <a href="#" className="hover:text-white/80">
-                {/* <Facebook className="w-6 h-6" /> */}
-              </a>
-              <a href="#" className="hover:text-white/80">
-                {/* <Twitter className="w-6 h-6" /> */}
-              </a>
-              <a href="#" className="hover:text-white/80">
-                {/* <Instagram className="w-6 h-6" /> */}
-              </a>
-              <a href="#" className="hover:text-white/80">
-                {/* <Facebook className="w-6 h-6" /> */}
-              </a>
-            </div>
-
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="flex space-x-6 mb-4 md:mb-0">
-                <a href="#" className="hover:underline">
-                  Home
-                </a>
-                <a href="#" className="hover:underline">
-                  Contact us
-                </a>
-                <a href="#" className="hover:underline">
-                  Services
-                </a>
-              </div>
-              <div className="text-sm">
-                © CleaningCorp™ 2025. All Rights Reserved.
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer/>
       </div>
     </div>
   );
