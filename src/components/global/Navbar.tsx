@@ -1,4 +1,4 @@
-function Navbar() {
+const Navbar: React.FC = () => {
   return (
     <div>
       <div className="bg-secondary">
@@ -9,13 +9,13 @@ function Navbar() {
             </div>
 
             <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
-              <a href="#" className="hover:text-gray-900">
+              <a href="/home" className="hover:text-gray-900">
                 Home
               </a>
-              <a href="#" className="hover:text-gray-900">
+              <a href="/about" className="hover:text-gray-900">
                 About Us
               </a>
-              <a href="#" className="hover:text-gray-900">
+              <a href="/contact" className="hover:text-gray-900">
                 Services
               </a>
             </nav>
@@ -31,6 +31,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
