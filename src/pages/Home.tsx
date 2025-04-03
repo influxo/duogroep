@@ -7,6 +7,7 @@ import badge from "../assets/images/Badge.svg";
 import bgIcons from "../assets/images/bgIcons.svg";
 import Accordion from "../components/home/accordion";
 import ServiceSlider from "../components/home/ServiceSlider";
+import Accordion from "../components/home/Accordion";
 import FeatureBadges from "../components/global/FeatureBadges";
 import Footer from "../components/global/Footer";
 import CleaningBlueSection from "../components/global/CleaningBlueSection";
