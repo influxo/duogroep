@@ -3,11 +3,11 @@ import orangeMan from "../assets/images/orange-man.png";
 import Button from "../components/global/Button";
 import Navbar from "../components/global/Navbar";
 import cleaning from "../assets/images/cleaningMachine.svg";
-import Accordion from "../components/home/accordion";
 import ServiceSlider from "../components/home/ServiceSlider";
 import FeatureBadges from "../components/global/FeatureBadges";
 import Footer from "../components/global/Footer";
 import CleaningBlueSection from "../components/global/CleaningBlueSection";
+import Accordion from "../components/home/accordion";
 const Home: React.FC = () => {
   return (
     <div>
