@@ -1,14 +1,20 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {  Routes, Route, Navigate, BrowserRouter } from 'react-router-dom'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
 
   return (
-    <div className="text-4xl font-bold text-blue-600">
-      Hello World
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        {/* Define your routes here */}
+        <Route path="/" element={<Home />} />
+        
+        {/* Add more routes as needed */}
+                <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+      </BrowserRouter>
+  );
 }
 
 export default App
