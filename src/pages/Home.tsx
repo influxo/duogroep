@@ -3,8 +3,6 @@ import orangeMan from "../assets/images/orange-man.png";
 import Button from "../components/global/Button";
 import Navbar from "../components/global/Navbar";
 import cleaning from "../assets/images/cleaningMachine.svg";
-import badge from "../assets/images/Badge.svg";
-import bgIcons from "../assets/images/bgIcons.svg";
 import Accordion from "../components/home/accordion";
 import ServiceSlider from "../components/home/ServiceSlider";
 const Home: React.FC = () => {
