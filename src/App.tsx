@@ -14,7 +14,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact />} /> 
-        <Route path="/singleService" element={<SingleService />} />
+        <Route path="/single-service" element={<SingleService />} />
       </Routes>
     </BrowserRouter>
   );

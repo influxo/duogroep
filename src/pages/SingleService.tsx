@@ -9,7 +9,7 @@ const SingleService: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="py-16 rounded-lg my-8 max-w-7xl mx-auto">
+      <div className="py-16 rounded-lg my-8 max-w-7xl mx-auto px-6">
         <nav className="py-4 text-sm text-gray-500">
           <div className="flex items-center space-x-2">
             <a href="#" className="hover:text-gray-700">
@@ -46,7 +46,7 @@ const SingleService: React.FC = () => {
           {[...Array(2)].map((_, rowIndex) => (
             <div
               key={rowIndex}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6"
+              className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-6"
             >
               {[
                 { img: pc, text: "Book your require services." },
@@ -55,17 +55,19 @@ const SingleService: React.FC = () => {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg overflow-hidden shadow-sm"
+                  className="bg-white rounded-lg overflow-hidden"
                 >
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-72 overflow-hidden px-8">
                     <img
                       src={item.img}
                       alt={item.text}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
-                  <div className="p-4 bg-gray-100 text-gray-800 text-center">
-                    <p>{item.text}</p>
+                  <div className="px-8 mt-2">
+                    <div className="p-4 bg-gray-100 hover:bg-primary hover:text-white text-gray-800 text-center rounded-xl cursor-pointer">
+                      <p>{item.text}</p>
+                    </div>
                   </div>
                 </div>
               ))}
