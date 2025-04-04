@@ -35,9 +35,8 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="mx-auto px-4 py-8 md:py-16 bg-white">
-          <div className="flex flex-col container mx-auto px-4 md:flex-row gap-8 items-center">
-            {/* Left side - img */}
+        <div className="px-4 py-8 md:py-16 bg-white">
+          <div className="flex flex-col max-w-7xl mx-auto px-4 md:flex-row gap-8 items-center">
             <div className="w-full">
               <div className="rounded-3xl overflow-hidden">
                 <img
@@ -48,7 +47,6 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Right side - Content */}
             <div className="w-full space-y-4 md:ml-14">
               <p className="text-primary text-2xl">About Us</p>
 
@@ -81,7 +79,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="bg-third">
-        <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 mb-16">
             <div>
               <h1 className="text-5xl md:text-6xl font-bold">
@@ -120,9 +118,8 @@ const Home: React.FC = () => {
         <CleaningBlueSection />
         <FeatureBadges />
 
-        {/* Maintenance Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
                 <h2 className="text-5xl md:text-7xl font-bold mb-4">
@@ -152,7 +149,7 @@ const Home: React.FC = () => {
         </section>
 
         <Accordion />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

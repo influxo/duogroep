@@ -32,8 +32,8 @@ const Accordion: React.FC = () => {
 
   return (
     <div>
-      <section className="bg-gray-50">
-        <div className="px-4">
+      <section className="bg-gray-50 mt-12">
+        <div className="px-4 max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/2 p-12">
               <h2 className="text-3xl font-bold mb-6">
@@ -106,8 +106,6 @@ const Accordion: React.FC = () => {
                 <img
                   src={photo}
                   alt="Glass window cleaning"
-                //   width={600}
-                //   height={600}
                   className="w-full h-full object-cover"
                 />
               </div>
