@@ -1,5 +1,5 @@
 import React from "react";
-import badge from "../../assets/images/badge.svg";
+import badge from "../../assets/images/Badge.svg";
 
 const FeatureBadges: React.FC = () => {
   return (
