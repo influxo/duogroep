@@ -126,11 +126,6 @@ const Home: React.FC = () => {
               Cleaning Services.
             </h1>
           </div>
-          <img 
-            src={bgIcons}
-            alt="Finance Illustration"
-            className="h-80 object-cover p-6"
-          />
         </section>
         {/* Features Section */}
         <section className="bg-gray-100 py-8 my-12">
@@ -140,11 +135,7 @@ const Home: React.FC = () => {
               <div className="flex items-start space-x-4">
                 <div className="bg-gray-200 rounded-full p-3">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                    <img
-                      src={badge}
-                      alt="Experience Icon"
-                      className="w-12 h-12"
-                    />
+        
                   </div>
                 </div>
                 <div>
@@ -160,11 +151,6 @@ const Home: React.FC = () => {
               <div className="flex items-start space-x-4">
                 <div className="bg-gray-200 rounded-full p-3">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                    <img
-                      src={badge}
-                      alt="Experience Icon"
-                      className="w-12 h-12"
-                    />
                   </div>
                 </div>
                 <div>
@@ -182,11 +168,6 @@ const Home: React.FC = () => {
               <div className="flex items-start space-x-4">
                 <div className="bg-gray-200 rounded-full p-3">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center">
-                    <img
-                      src={badge}
-                      alt="Experience Icon"
-                      className="w-12 h-12"
-                    />
                   </div>
                 </div>
                 <div>
