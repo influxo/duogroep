@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import badge from "../../assets/images/Badge.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FeatureBadges: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  });
   return (
     <div>
       <section className="bg-gray-100 py-8 my-12 md:my-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex items-start space-x-4">
+            <div
+              className="flex items-start space-x-4"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="bg-gray-200 rounded-full p-3">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center">
                   <img
@@ -26,7 +37,11 @@ const FeatureBadges: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div
+              className="flex items-start space-x-4"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="bg-gray-200 rounded-full p-3">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center">
                   <img
@@ -47,7 +62,11 @@ const FeatureBadges: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div
+              className="flex items-start space-x-4"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="bg-gray-200 rounded-full p-3">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center">
                   <img

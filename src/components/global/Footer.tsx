@@ -11,16 +11,16 @@ const Footer: React.FC = () => {
       <footer className="bg-[#4993F3] text-white mt-auto">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-end space-x-6 mb-6 border-b border-gray-300 pb-4">
-            <a href="#" className="hover:text-white/80">
+            <a href="#" className="hover:text-white/80" data-aos="zoom-in-right">
               <FaLinkedin className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:text-white/80">
+            <a href="#" className="hover:text-white/80" data-aos="zoom-in-left">
               <FaTwitter className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:text-white/80">
+            <a href="#" className="hover:text-white/80" data-aos="zoom-in-right">
               <FaInstagram className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:text-white/80">
+            <a href="#" className="hover:text-white/80" data-aos="zoom-in-left">
               <FaFacebook className="w-6 h-6" />
             </a>
           </div>

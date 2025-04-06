@@ -6,6 +6,7 @@ import FeatureBadges from "../components/global/FeatureBadges";
 import orangeMan from "../assets/images/orange-man.png";
 import kids from "../assets/images/kids.png";
 import hat from "../assets/images/hat.png";
+import Button from "../components/global/Button";
 
 const About: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const About: React.FC = () => {
       <Navbar />
       <div className="bg-secondary">
         <div className="max-w-7xl mx-auto h-screen px-6 grid md:grid-cols-2 items-center gap-10 pt-12">
-          <div>
+          <div data-aos="fade-right">
             <h1 className="text-xl md:text-3xl text-gray-900 leading-tight mb-6">
               Clean your dream place.
             </h1>
@@ -25,7 +26,7 @@ const About: React.FC = () => {
             </h1>
           </div>
 
-          <div className="relative">
+          <div className="relative" data-aos="fade-left">
             <img
               src={ball}
               alt="Finance Illustration"
@@ -83,10 +84,7 @@ const About: React.FC = () => {
                 <p className="font-medium">Brushing and Vacuuming.</p>
               </div>
             </div>
-
-            <button className="mt-8 px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
-              Contact Us
-            </button>
+            <Button />
           </div>
         </div>
       </div>
@@ -104,8 +102,12 @@ const About: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left side - Image */}
-          <div className="rounded-lg overflow-hidden">
+          <div
+            className="rounded-lg overflow-hidden"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src={kids}
               alt="Children jumping into a pool"
@@ -113,9 +115,8 @@ const About: React.FC = () => {
             />
           </div>
 
-          {/* Right side - Content */}
           <div>
-            <div className=" gap-4 mb-6 ">
+            <div className="gap-4 mb-6">
               <img
                 src={hat}
                 alt="Yellow pool float with straw hat"
@@ -123,8 +124,8 @@ const About: React.FC = () => {
               />
             </div>
 
-            <h3 className="text-4xl font-bold text-gray-400">01.</h3>
-            <h4 className="text-xl font-semibold mt-2">
+            <h3 className="text-4xl font-bold text-gray-400" data-aos="flip-right" data-aos-duration="1500">01.</h3>
+            <h4 className="text-xl font-semibold mt-2" data-aos="zoom-right" data-aos-duration="2000">
               Brand team building results after premium web-readiness value web
               enabled e-business engage web enabled strategic.
             </h4>
@@ -135,10 +136,7 @@ const About: React.FC = () => {
               available for their guests to use at their leisure. Universities
               typically have pools for physical education.
             </p>
-
-            <button className="mt-8 px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors">
-              Contact Us
-            </button>
+            <Button />
           </div>
         </div>
       </div>

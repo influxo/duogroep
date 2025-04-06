@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import photo from "../../assets/images/Photo.png";
-
+import "aos/dist/aos.css";
 const Accordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -36,12 +36,13 @@ const Accordion: React.FC = () => {
         <div className="px-4 max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/2 p-12">
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="text-3xl font-bold mb-6" data-aos="fade-down"
+     data-aos-duration="3000">
                 Relax we're always here for
                 <br />
                 you!
               </h2>
-              <p className="text-gray-700 mb-8">
+              <p className="text-gray-700 mb-8" data-aos="fade-right">
                 Nam ut ante magna. Aliquam ipsum ex, condimentum non ipsum.
                 Fusce feugiat magna nec eros, suscipit nulla lectus ut. Cras ut
                 eros eu feugiat tempor placerat.
@@ -74,6 +75,7 @@ const Accordion: React.FC = () => {
                         className={`text-2xl transform ${
                           activeIndex === index ? "rotate-45 text-white" : ""
                         } transition-transform`}
+                        data-aos="fade-down"
                       >
                         +
                       </span>
