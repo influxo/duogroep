@@ -16,7 +16,7 @@ const SingleService: React.FC = () => {
   })
   return (
     <div>
-      <Navbar />
+      <Navbar bgColor="bg-white"/>
       <div className="py-16 rounded-lg my-8 max-w-7xl mx-auto px-6">
         <nav className="py-4 text-sm text-gray-500">
           <div className="flex items-center space-x-2">

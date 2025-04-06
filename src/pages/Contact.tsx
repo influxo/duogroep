@@ -36,7 +36,7 @@ export default function ContactPage() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar bgColor="bg-white"/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <nav className="py-4 text-sm text-gray-500">
           <div className="flex items-center space-x-2">
@@ -84,7 +84,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right column - Form */}
             <div className="bg-blue-50 rounded-lg p-6 shadow-md" data-aos="fade-left">
               <h2 className="text-xl font-semibold text-gray-800">
                 Request A Quote — let's work together.
@@ -247,8 +246,5 @@ export default function ContactPage() {
       <Footer />
     </div>
   );
-}
-function effect(arg0: () => void) {
-  throw new Error("Function not implemented.");
-}
+};
 

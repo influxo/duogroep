@@ -11,7 +11,7 @@ import Button from "../components/global/Button";
 const About: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar bgColor="bg-secondary" />
       <div className="bg-secondary">
         <div className="max-w-7xl mx-auto h-screen px-6 grid md:grid-cols-2 items-center gap-10 pt-12">
           <div data-aos="fade-right">
@@ -124,8 +124,18 @@ const About: React.FC = () => {
               />
             </div>
 
-            <h3 className="text-4xl font-bold text-gray-400" data-aos="flip-right" data-aos-duration="1500">01.</h3>
-            <h4 className="text-xl font-semibold mt-2" data-aos="zoom-right" data-aos-duration="2000">
+            <h3
+              className="text-4xl font-bold text-gray-400"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
+              01.
+            </h3>
+            <h4
+              className="text-xl font-semibold mt-2"
+              data-aos="zoom-right"
+              data-aos-duration="2000"
+            >
               Brand team building results after premium web-readiness value web
               enabled e-business engage web enabled strategic.
             </h4>

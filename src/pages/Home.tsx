@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className="bg-secondary">
-        <Navbar />
+        <Navbar bgColor="bg-secondary"/>
         <div className="max-w-7xl mx-auto h-screen px-6 grid md:grid-cols-2 items-center gap-10 pt-12">
           <div data-aos="fade-right">
             <h1 className="text-xl md:text-3xl text-gray-900 leading-tight mb-6">
