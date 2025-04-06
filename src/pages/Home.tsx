@@ -7,7 +7,7 @@ import ServiceSlider from "../components/home/ServiceSlider";
 import FeatureBadges from "../components/global/FeatureBadges";
 import Footer from "../components/global/Footer";
 import CleaningBlueSection from "../components/global/CleaningBlueSection";
-import Accordion from "../components/home/Accordion";
+import Accordion from "../components/home/accordion";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
