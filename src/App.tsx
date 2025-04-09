@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SingleService from "./pages/SingleService";
+import OurServices from "./pages/OurServices";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact />} /> 
+        <Route path="/services" element={<OurServices />} />
         <Route path="/single-service" element={<SingleService />} />
+        <Route path="/services/:slug" element={<SingleService />} />
       </Routes>
     </BrowserRouter>
   );

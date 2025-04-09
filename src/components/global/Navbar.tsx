@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor = "bg-white" }) => {
               <a href="/about" className="hover:text-gray-900" data-aos="zoom-out-left">
                 About Us
               </a>
-              <a href="/single-service" className="hover:text-gray-900" data-aos="zoom-out-right">
+              <a href="/services" className="hover:text-gray-900" data-aos="zoom-out-right">
                 Services
               </a>
               <a href="/contact" className="hover:text-gray-900" data-aos="zoom-out-left">
