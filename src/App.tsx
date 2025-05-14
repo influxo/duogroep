@@ -8,18 +8,8 @@
 function App() {
   return (
     <div>
-      
+      <h1>Duo Groep did not pay the developers for the website</h1>
     </div>
-    // <BrowserRouter>
-    //   <Routes>
-    //     {/* Define your routes here */}
-    //     {/* <Route path="/" element={<Home />} />
-    //     <Route path="*" element={<Navigate to="/" replace />} />
-    //     <Route path="/about" element={<About/>} />
-    //     <Route path="/contact" element={<Contact />} /> 
-    //     <Route path="/single-service" element={<SingleService />} /> */}
-    //   </Routes>
-    // </BrowserRouter>
   );
 }
 
