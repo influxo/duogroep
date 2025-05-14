@@ -1,10 +1,17 @@
 import type React from "react";
 import { FaPhone, FaMapPin, FaArrowRight } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function ContactPage() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  });
   const [formData, setFormData] = useState({
     name1: "",
     email1: "",
@@ -29,7 +36,7 @@ export default function ContactPage() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar bgColor="bg-white"/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <nav className="py-4 text-sm text-gray-500">
           <div className="flex items-center space-x-2">
@@ -44,7 +51,7 @@ export default function ContactPage() {
         </nav>
 
         <div className="mt-6">
-          <p className="text-2xl font-medium">Please Contact Us Today!</p>
+          <p className="text-2xl font-medium" data-aos="fade-right">Please Contact Us Today!</p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
             <div>
@@ -77,8 +84,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right column - Form */}
-            <div className="bg-blue-50 rounded-lg p-6 shadow-md">
+            <div className="bg-blue-50 rounded-lg p-6 shadow-md" data-aos="fade-left">
               <h2 className="text-xl font-semibold text-gray-800">
                 Request A Quote — let's work together.
               </h2>
@@ -213,7 +219,7 @@ export default function ContactPage() {
         </div>
 
         {/* Map */}
-        <div className="mt-12 h-96 w-full rounded-lg overflow-hidden border border-gray-200">
+        <div className="mt-12 h-96 w-full rounded-lg overflow-hidden border border-gray-200" data-aos="flip-down">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95714.57499039117!2d-71.43979222953964!3d43.00095459623209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e24ed668666ca7%3A0x9cf6fc409d5e3f07!2sManchester%2C%20NH%2C%20USA!5e0!3m2!1sen!2sus!4v1649289573518!5m2!1sen!2sus"
             width="100%"
@@ -240,4 +246,5 @@ export default function ContactPage() {
       <Footer />
     </div>
   );
-}
+};
+

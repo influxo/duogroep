@@ -1,4 +1,3 @@
-import heroimg from "../assets/images/Hero.png";
 import orangeMan from "../assets/images/orange-man.png";
 import Button from "../components/global/Button";
 import Navbar from "../components/global/Navbar";
@@ -8,38 +7,31 @@ import FeatureBadges from "../components/global/FeatureBadges";
 import Footer from "../components/global/Footer";
 import CleaningBlueSection from "../components/global/CleaningBlueSection";
 import Accordion from "../components/home/accordion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Hero from "../components/global/Hero";
 const Home: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   return (
     <div>
       <div className="bg-secondary">
-        <Navbar />
-        <div className="max-w-7xl mx-auto h-screen px-6 grid md:grid-cols-2 items-center gap-10 pt-12">
-          <div>
-            <h1 className="text-xl md:text-3xl text-gray-900 leading-tight mb-6">
-              Clean your dream place.
-            </h1>
-            <h1 className="text-5xl md:text-7xl font-medium text-gray-900 leading-tight">
-              You think,
-              <br />
-              <span className="text-primary">we clean</span> your <br /> dream
-              thing.
-            </h1>
-          </div>
+        <Navbar bgColor="bg-secondary" />
+        <Hero />
 
-          <div className="relative">
-            <img
-              src={heroimg}
-              alt="Finance Illustration"
-              className="relative z-10 mx-auto"
-            />
-          </div>
-        </div>
-
-        <div className="mx-auto px-4 py-8 md:py-16 bg-white">
-          <div className="flex flex-col container mx-auto px-4 md:flex-row gap-8 items-center">
-            {/* Left side - img */}
+        <div className="px-4 py-8 md:py-16 bg-white">
+          <div className="flex flex-col max-w-7xl mx-auto px-4 md:flex-row gap-8 items-center">
             <div className="w-full">
-              <div className="rounded-3xl overflow-hidden">
+              <div
+                className="rounded-3xl overflow-hidden"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+              >
                 <img
                   src={orangeMan}
                   alt="Pool maintenance professional cleaning a swimming pool"
@@ -48,8 +40,11 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Right side - Content */}
-            <div className="w-full space-y-4 md:ml-14">
+            <div
+              className="w-full space-y-4 md:ml-14"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <p className="text-primary text-2xl">About Us</p>
 
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
@@ -81,9 +76,9 @@ const Home: React.FC = () => {
       </div>
 
       <div className="bg-third">
-        <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 mb-16">
-            <div>
+            <div data-aos="zoom-out-right">
               <h1 className="text-5xl md:text-6xl font-bold">
                 Professional
                 <br />
@@ -91,7 +86,7 @@ const Home: React.FC = () => {
               </h1>
             </div>
 
-            <div>
+            <div data-aos="zoom-out-left">
               <p className="text-gray-700 text-base md:text-lg">
                 Many health clubs, fitness centers and private clubs, such as
                 the YMCA, have pools used mostly for exercise or recreation.
@@ -120,9 +115,8 @@ const Home: React.FC = () => {
         <CleaningBlueSection />
         <FeatureBadges />
 
-        {/* Maintenance Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
                 <h2 className="text-5xl md:text-7xl font-bold mb-4">
@@ -139,7 +133,10 @@ const Home: React.FC = () => {
                 <Button />
               </div>
               <div className="w-full md:w-1/2">
-                <div className="rounded-lg overflow-hidden">
+                <div
+                  className="rounded-lg overflow-hidden"
+                  data-aos="zoom-out-left"
+                >
                   <img
                     src={orangeMan}
                     alt="Pool maintenance professional cleaning a swimming pool"
@@ -152,7 +149,7 @@ const Home: React.FC = () => {
         </section>
 
         <Accordion />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

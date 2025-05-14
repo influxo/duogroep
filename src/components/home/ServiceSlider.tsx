@@ -88,7 +88,7 @@ const ServiceSlider: React.FC = () => {
   };
 
   return (
-    <section className="py-20 px-[10%] bg-white mb-12">
+    <section className="max-w-7xl mx-auto py-20 bg-white md:mb-24 mb-12">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="mb-12 lg:w-1/2 text-left">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
